@@ -1,0 +1,16 @@
+logging:
+  level: INFO
+  loggers:
+    nl.jordidorren: DEBUG
+
+server:
+  rootPath: /api/*
+  applicationConnectors:
+    - type: http
+      port: 8080
+
+itemResource:
+  itemDao:
+    tableName: item
+    columnNames: [id, name, price_cents]
+
